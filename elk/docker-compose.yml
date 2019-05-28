@@ -4,6 +4,7 @@ elk:
     - "5601:5601"
     - "9200:9200"
     - "5044:5044"
+  hostname: "elk"
   volumes:
 # needed to persist elk data :
      - "./elasticsearch_data:/var/lib/elasticsearch:rw"
